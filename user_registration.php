@@ -14,7 +14,7 @@ $HostUser = "ughaijth8ft2wpjh";
 $HostPass = "OBfrsxYhWiuoAhYJeHpm";
   $message="";
 // Creating connection.
-$Enoded_data= file_get_contents('php//input'); //use to fetch api in json foramt 
+$Enoded_data= file_get_contents('php://input'); //use to fetch api in json foramt 
 $Decoded_data=json_decode($Enoded_data,true);  // decode data from json formet
 $uname=$Decoded_data['uname']; 
 $password=$Decoded_data['password'];
