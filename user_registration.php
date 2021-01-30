@@ -20,7 +20,7 @@ $uname=$Decoded_data['uname'];
 $password=$Decoded_data['password'];
 $con =  mysqli_connect($HostName,$HostUser,$HostPass,$DatabaseName);
  if($con){
-    echo("Connection Successful \n");
+  //  echo("Connection Successful \n");
     $query= "select * from Surveyur where uname like $uname and password like $password  ;" ;
     $result = mysqli_query($con, $query);
 
